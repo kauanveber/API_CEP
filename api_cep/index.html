@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+    <form>
+        
+        <label >Cep:
+            <div class="container1">
+            <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                onblur="loadLogradouro(this.value);" /></label><br />
+            </div>
+            
+        <label>Rua:
+            <div class="container1">
+            <input type="text" id="logradouro" required disabled /></label><br />
+        </div>
+        
+        <label>Bairro:
+            <div class="container1">
+            <input type="text" id="bairro" required disabled /></label><br />
+        </div>
+        
+        <label>Cidade:
+            <div class="container1">
+            <input type="text" id="cidade" required disabled /></label><br />
+        </div>
+        
+        <label>Estado:
+            <div class="container1">
+            <input type="text" id="uf" required disabled /></label><br />
+        </div>
+        
+        <label>IBGE:
+            <div class="container1">
+            <input type="text" id="ibge" required disabled /></label><br />
+        </div>
+    </form>
+</div>
+   
+    <script src="script.js"></script>
+</body>
+
+</html>
