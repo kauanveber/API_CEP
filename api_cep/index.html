@@ -10,13 +10,18 @@
 
 <body>
     <div style="display: flex;justify-content: center;padding: 80px;">
-        <h1>Procura Endereço</h1>
+        <h1>Cadastrar Cliente</h1>
     </div>
     <div style="display: flex; align-items: center;justify-content: center;">
     <div class="container">
         
     <form>
-        
+        <label >Nome</label>
+        <input type="text" id="nome"  />
+        <label >Email</label>
+        <input type="text" id="email"  />
+        <label >Telefone</label>
+        <input type="text" id="telefone"  />
         <label >Cep:
             <div class="container1">
             <input name="cep" type="text" id="cep"  
@@ -49,9 +54,12 @@
         </div>
     
     </form>
+    <button onclick="validarCadastro()", style="background-color: green; margin: 10px; padding: 5px;">Cadastar</button>
+
 </div>
 </div>
    
+<a href="consultarDados.html" style="display: flex;margin: 100; "></a>
     <script src="script.js"></script>
 </body>
 

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>LocalStorage</h2>
+    <label for="">Infome seu nome</label>
+    <input type="text" id="contatos" placeholder="Digite seu nome aqui">
+    <button onclick="gravar()">Gravar</button>
+    <hr>
+    <a href="leitura.html">Ler Dados</a>
+    
+<script>
+    function gravar() {
+         let contatos = JSON.parse(localStorage.getItem('contatos')) || [];
+            let contato = document.getElementById('contatos').value;
+            contatos.push(contato);
+            localStorage.setItem('contatos', JSON.stringify(contatos));
+            document.getElementById('contatos').value = '';
+
+         
+    }
+
+   
+</script>
+        
+    
+</body>
+</html>

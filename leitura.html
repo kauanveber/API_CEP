@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="index.html">Voltar</a>
+    <hr>
+    <p></p>
+    <script>
+        document.getElementsByTagName('p')[0].innerHTML = localStorage.getItem('contatos');
+        let contatos = JSON.parse(localStorage.getItem('contatos')) || []
+        getItem(contatos)
+    </script>
+</body>
+</html>
